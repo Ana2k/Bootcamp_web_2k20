@@ -4,7 +4,13 @@
     <meta charset="utf-8">
     <title>if Statements</title>
     <script>
-
+        var marks=prompt("Enter some marks out of 100");
+        if(marks<40){
+            alert("Work harder on this you wont pass else");
+        }
+        else{
+            alert("congratulations your efforts are worth it :)");
+        }
         var dayOfWeek = prompt("Enter the Day of Week");
         var result;
         dayOfWeek = dayOfWeek.toLowerCase();
@@ -15,7 +21,7 @@
             result = "Second Days of Week";
         }else if( dayOfWeek == 'wednesday' || dayOfWeek == 'wed' ){
             result = "Mid Week";
-        }else if( dayOfWeek == 'thursday' || dayOfWeek == 'thurs'){
+        }else if( dayOfWeek == 'thursday' || dayOfWeek == 'thur'){
             result = "Preparing for Weekend";
         }else if( dayOfWeek == 'friday' || dayOfWeek == 'fri'){
             result = "It's Friday!";
@@ -35,7 +41,7 @@
 
     <h1>if Statements</h1>
     <script type="text/javascript">
-        document.write( result );
+        document.write( result +"<br>"+marks);
     </script>
 
 </body>
